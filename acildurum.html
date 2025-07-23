@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pediatri Bölümü - Acil Durum</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+
+      .about-section h2{
+
+        margin-bottom:20px;
+      }
+      .task-form input, .task-form textarea {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size:1.2em;
+        font-family:Arial, Helvetica, sans-serif
+      }
+
+      .task-form button {
+        background:#d10101;
+        font-size:1.2em;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .task-form button:hover {
+        background: #a00000;
+        
+      }
+
+      .task-list {
+        margin-top: 20px;
+      }
+
+      .task {
+    background-color: #a00000;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 10px;
+    display: flex;
+    margin-top:20px;
+    flex-direction: column;  /* İçeriği dikeyde sıralar */
+    gap: 5px;  /* Elemanlar arasındaki boşluk */
+    word-wrap: break-word;  /* Kelimelerin taşmasını engeller ve alt satıra geçmesini sağlar */
+    overflow-wrap: break-word; /* Modern tarayıcılarda taşmayı engeller */
+}
+.task .task-icon {
+    margin-right: 15px;
+    font-size: 2em;
+    color: #ffffff; /* Turuncu renk */
+}
+.task-content {
+    flex-grow: 1;
+}
+.task-actions {
+    display: flex;
+    gap: 10px;
+}
+.task-actions button {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task-actions button:hover {
+    transform: scale(1.2); /* Butonu %20 büyüt */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Hafif bir gölge ekle */
+}
+      .task h4 {
+        padding:5px;
+        margin: 0;
+        margin-top:10px;
+        background-color: #ffffff56;
+        color:#fff;
+        border-radius: 10px;
+        font-size:1.3em;
+        word-wrap: break-word; 
+      }
+
+      .task p {
+        background-color: #ffffff29;
+        padding:5px;
+        border-radius: 10px;
+        margin: 5px 0 0;
+        margin-bottom:10px;
+        word-wrap: break-word; 
+        color:#fff;
+
+      }
+
+      .task-actions button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-left: 10px;
+        font-size: 1em;
+      }
+
+      .task-actions .edit-btn {
+        color: #fff;
+      }
+
+      .task-actions .delete-btn {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Üst Başlık -->
+    <header class="top-header">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Logo" class="logo">
+            <div class="logo-text">
+                <h1>Sakarya Üniversitesi</h1>
+                <h2>Tıp Fakültesi</h2>
+            </div>
+        </div>
+        <div class="separator"></div> 
+        <div class="main">
+          <h1 class="main-title">Pediatri Bölümü</h1>
+          <p class="contact-info">Telefon: 0 (264) 295 66 30 | Email: tip@sakarya.edu.tr</p>
+          <button class="hamburger-menu" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+    </header>
+
+    <!-- Navigasyon -->
+    <nav class="navbar">
+      <ul class="nav-links">
+          <li><a href="anasayfa.html"><i class="fas fa-home"></i></a></li>
+          <li><a href="tanitim.html">Tanıtım</a></li>
+          <li><a href="asistanlar.html">Asistanlar</a></li>
+          <li><a href="ogretim-uyeleri.html">Öğretim Üyeleri</a></li>
+          <li><a href="takvim.html">Nöbet Takvimi</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="duyurular.html">Duyurular</a></li>
+          <li><a href="acildurum.html">Acil Durum</a></li>
+      </ul>
+  </nav>
+
+    <!-- Task Manager -->
+    <section class="about-section">
+      <h2>Acil Durum Bildiri</h2>
+      <form class="task-form" id="taskForm">
+        <input type="text" id="taskTitle" placeholder="Başlık" required>
+        <textarea id="taskDescription" rows="3" placeholder="Açıklama" required></textarea>
+        <button type="button" onclick="addTask()">Acil Durum Bildir</button>
+      </form>
+      <div class="task-list" id="taskList"></div>
+    </section>
+
+    <!-- Alt Başlık -->
+    <footer class="footer">
+      <p>&copy; 2024 Sakarya Üniversitesi Tıp Fakültesi Pediatri Bölümü. Tüm hakları saklıdır.</p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/acildurum.js"></script>
+  </body>
+</html>

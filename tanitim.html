@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pediatri Bölümü - Tanıtım</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Üst Başlık -->
+    <header class="top-header">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Logo" class="logo">
+            <div class="logo-text">
+                <h1>Sakarya Üniversitesi</h1>
+                <h2>Tıp Fakültesi</h2>
+            </div>
+        </div>
+        <div class="separator"></div> 
+        <div class="main">
+          <h1 class="main-title">Pediatri Bölümü</h1>
+          <p class="contact-info">Telefon: 0 (264) 295 66 30 | Email: tip@sakarya.edu.tr</p>
+          <button class="hamburger-menu" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+    </header>
+
+    <!-- Navigasyon -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="anasayfa.html"><i class="fas fa-home"></i></a></li>
+            <li><a href="tanitim.html">Tanıtım</a></li>
+            <li><a href="asistanlar.html">Asistanlar</a></li>
+            <li><a href="ogretim-uyeleri.html">Öğretim Üyeleri</a></li>
+            <li><a href="takvim.html">Nöbet Takvimi</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="duyurular.html">Duyurular</a></li>
+            <li><a href="acildurum.html">Acil Durum</a></li>
+        </ul>
+    </nav>
+
+    <!-- Bölüm Tanıtımı -->
+    <section class="about-section">
+        <h2>Bölüm Tanıtımı</h2>
+        <img id="tanitim" src="img/tanitim_1.jpg" alt="Tanıtım fotoğrafı">
+        <p>
+            Sakarya Üniversitesi Tıp Fakültesi Pediatri Bölümü, çocuk sağlığı ve hastalıkları alanında
+            uzmanlaşmış bir eğitim ve araştırma bölümüdür. Bölümümüzde modern teknolojilerle donatılmış
+            yataklı servisler, poliklinikler ve laboratuvarlar bulunmaktadır. Bölümümüz, geleceğin
+            pediatri uzmanlarını yetiştirmek ve çocuk sağlığı alanında fark yaratacak araştırmalar yapmak
+            için çalışmaktadır.
+        </p>
+    </section>
+
+    <!-- Hasta ve Yatak Durumu -->
+    <section class="about-section">
+        <h2>Bölüm İstatistikleri</h2>
+        <table class="stats-table">
+            <thead>
+                <tr>
+                    <th>Servis</th>
+                    <th>Hasta Sayısı</th>
+                    <th>Boş Yatak Sayısı</th>
+                    <th>Notlar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Poliklinik</td>
+                    <td>120</td>
+                    <td>-</td>
+                    <td>Randevu sistemi ile çalışılmaktadır.</td>
+                </tr>
+                <tr>
+                    <td>Yataklı Servis</td>
+                    <td>45</td>
+                    <td>10</td>
+                    <td>Acil durumlar için yatak rezervasyonu bulunmaktadır.</td>
+                </tr>
+                <tr>
+                    <td>Yoğun Bakım</td>
+                    <td>15</td>
+                    <td>2</td>
+                    <td>Her yoğun bakım odasında ileri teknoloji ekipmanlar bulunmaktadır.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="about-section">
+      <h2>Kullanılan Teknolojiler</h2>
+      <ul class="technologies-list">
+          <li>Gelişmiş ultrasonografi cihazları.</li>
+          <li>Ventilatör destekli yoğun bakım üniteleri.</li>
+          <li>Modern laboratuvar cihazları ve analiz sistemleri.</li>
+          <li>Tele-tıp ile uzaktan hasta takip sistemi.</li>
+      </ul>
+  </section>
+  <section class="about-section">
+    <h2>Asistan ve Doktor Bilgilendirme</h2>
+    <p>Asistanlarımız için eğitim planları ve hasta takip sistemleri bulunmaktadır. Ayrıca, uzman doktorlarımızın gözetiminde pratik eğitim sağlanmaktadır.</p>
+    <ul>
+        <li><strong>Staj Takvimi:</strong> Haftalık program dahilinde uygulamalı eğitimler.</li>
+        <li><strong>Öğretim Üyeleri:</strong> Bölümden sorumlu akademisyenler ve iletişim bilgileri.</li>
+        <li><strong>Hasta Takip Sistemi:</strong> Güncel hasta bilgileri ve klinik notlar.</li>
+    </ul>
+  </section>
+  <section class="about-section">
+    <h2>Hasta ve Aile Bilgilendirme</h2>
+    <p>Bölümümüze başvuran hastalar ve aileleri için aşağıdaki hizmetler sunulmaktadır:</p>
+    <ul>
+        <li>Hasta kabul prosedürleri ve randevu sistemleri.</li>
+        <li>Yataklı servislerde ziyaret saatleri ve kurallar.</li>
+        <li>İletişim: Acil durumlar için 7/24 erişim sağlanmaktadır.</li>
+    </ul>
+</section>
+<section class="about-section">
+  <h2>Bölüm Galerisi</h2>
+  <div class="gallery-images">
+      <img src="img/gallery1.png"  class="gallery-img" onclick="openModal('img/gallery1.png')">
+      <img src="img/gallery2.png"  class="gallery-img" onclick="openModal('img/gallery2.png')">
+      <img src="img/gallery3.png"  class="gallery-img" onclick="openModal('img/gallery3.png')">
+  </div>
+</section>
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+    <!-- Alt Başlık -->
+    <footer class="footer">
+        <p>&copy; 2024 Sakarya Üniversitesi Tıp Fakültesi Pediatri Bölümü. Tüm hakları saklıdır.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

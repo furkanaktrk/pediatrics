@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pediatri Bölümü</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Üst Başlık -->
+    <header class="top-header">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Logo" class="logo">
+            <div class="logo-text">
+                <h1>Sakarya Üniversitesi</h1>
+                <h2>Tıp Fakültesi</h2>
+            </div>
+        </div>
+        <div class="separator"></div> 
+        <div class="main">
+          <h1 class="main-title">Pediatri Bölümü</h1>
+          <p class="contact-info">Telefon: 0 (264) 295 66 30 | Email: tip@sakarya.edu.tr</p>
+          <button class="hamburger-menu" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+    </header>
+
+    <!-- Navigasyon -->
+    <nav class="navbar">
+      <ul class="nav-links">
+          <li><a href="anasayfa.html"><i class="fas fa-home"></i></a></li>
+          <li><a href="tanitim.html">Tanıtım</a></li>
+          <li><a href="asistanlar.html">Asistanlar</a></li>
+          <li><a href="ogretim-uyeleri.html">Öğretim Üyeleri</a></li>
+          <li><a href="takvim.html">Nöbet Takvimi</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="duyurular.html">Duyurular</a></li>
+          <li><a href="acildurum.html">Acil Durum</a></li>
+      </ul>
+  </nav>
+
+<!-- Slider -->
+<section class="slider">
+    <button class="slider-btn prev" onclick="moveSlide(-1)">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <div class="slide">
+        <a href="haber1.html">
+            <img src="img/haber1.jpg" alt="Haber 1 " class="slider-img">
+            <div class="slide-text">Sakarya Üniversitesi zirveye yerleşti!</div>
+        </a>
+    </div>
+    <div class="slide">
+        <a href="haber2.html">
+            <img src="img/haber2.jpg" alt="Haber 2" class="slider-img">
+            <div class="slide-text">Avrupa birliğinin en yüksek bütçeli projesi SAÜ'den!</div>
+        </a>
+    </div>  
+    <div class="slide">
+        <a href="haber3.html">
+            <img src="img/haber3.jpg" alt="Haber 3" class="slider-img">
+            <div class="slide-text">Sağlık neferlerimiz beyaz önlüklerini giydiler!</div>
+        </a>
+    </div>
+
+    <button class="slider-btn next" onclick="moveSlide(1)">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+</section>
+    
+    <section class="calendar-section">
+        <h2>Güncel Nöbet Takvimi</h2>
+        <div id="calendar" class="calendar">
+        </div>
+    </section>
+
+    <!-- Ana İçerik -->
+    <section class="main-content">
+        <div class="column">
+            <h2>Duyurular</h2>
+            <div class="notice">
+                <table class="notice-table">
+                    <tr class="notice-row">
+                        <td class="notice-img">
+                            <a href="duyuru1.html">
+                                <img src="img/duyuru1.jpg" alt="Duyuru 1" class="notice-image">
+                            </a>
+                        </td>
+                        <td class="notice-content">
+                            <a href="duyuru1.html">
+                                <h3 class="notice-title">Burs başvuruları başladı!</h3>
+                            </a>
+                            <p class="notice-description">Sevgili Tıp Fakültesi Öğrencileri,
+
+                                Sakarya Üniversitesi Vakfı, siz değerli öğrencilerimize destek olmak amacıyla sınırlı sayıda burs imkânı sunmaktadır. Bu burs, özellikle gerçek anlamda maddi desteğe ihtiyacı olan öğrencilerimize yöneliktir.</p>
+                        </td>
+                    </tr>
+                    <tr class="notice-row">
+                        <td class="notice-img">
+                            <a href="duyuru2.html">
+                                <img src="img/duyuru2.jpg" alt="Duyuru 2" class="notice-image">
+                            </a>
+                        </td>
+                        <td class="notice-content">
+                            <a href="duyuru2.html">
+                                <h3 class="notice-title">Engelli öğrencilerimizle tanışma ve oryantasyon toplantısı</h3>
+                            </a>
+                            <p class="notice-description">Üniversitemizde eğitim gören engelli/ özel gereksinimli öğrencilerimizin birbirleriyle tanışması için 10 Ekim 2024 Perşembe günü saat 13.00'te üniversitemiz Personel Lokalinde tanışma ve oryantasyon toplantısı yapılacaktır. Tüm engelli/ özel gereksinimli öğrencilerimizi bekliyoruz.</p>
+                        </td>
+                    </tr>
+                    <tr class="notice-row">
+                        <td class="notice-img">
+                            <a href="duyuru3.html">
+                                <img src="img/duyuru3.jpg" alt="Duyuru 3" class="notice-image">
+                            </a>
+                        </td>
+                        <td class="notice-content">
+                            <a href="duyuru3.html">
+                                <h3 class="notice-title">9.Deney Hayvanı Kullanım Sertifika Kursu</h3>
+                            </a>
+                            <p class="notice-description">02-11 Kasım  2024 //
+                              Kurs Programı, Orman ve Su İşleri Bakanlığı, Doğa Koruma ve Milli Parklar Genel Müdürlüğü’nün 02.04.2019 tarih ve 2019/03 sayılı “Deney Hayvanları Kullanım Sertifikası Eğitim Programına Dair Genelgesi” esas alınarak hazırlanmıştır.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <div class="column">
+            <h2>Başarılarımız</h2>
+            <div class="notice">
+                <table class="notice-table">
+                    <tr class="notice-row">
+                        <td class="notice-img">
+                            <a href="basari1.html">
+                                <img src="img/basari1.jpg" alt="Başarı 1" class="notice-image">
+                            </a>
+                        </td>
+                        <td class="notice-content">
+                            <a href="basari1.html">
+                                <h3 class="notice-title">Araştırma Poster Alanında İkincilik Ödülü</h3>
+                            </a>
+                            <p class="notice-description">Sakarya Üniversitesi Tıp fakültesi Deri ve Zührevi hastalıklar Anabilim Dalı öğretim Üyesi Doç. Dr. Berna SOLAK  20 - 24 Kasım 2024 tarihleri arasında yapılan XXXII. Ulusal Dermatoloji Kongresinde "Pemfigus Vulgaris Hastalıklarında Sistemik İnflamasyon Parametrelerininm Hastalık Aktivitesi ve Tedavi Yanıtı ile İlişkisi" Poster Araştırma Bildiri İkincilik ödülü aldı.</p>
+                        </td>
+                    </tr>
+                    <tr class="notice-row">
+                        <td class="notice-img">
+                            <a href="basari2.html">
+                                <img src="img/basari1.jpg" alt="Başarı 2" class="notice-image">
+                            </a>
+                        </td>
+                        <td class="notice-content">
+                            <a href="basari2.html">
+                                <h3 class="notice-title">Fakültemizden TÜBİTAK 1001 Başarısı</h3>
+                            </a>
+                            <p class="notice-description">Sakarya Üniversitesi Tıp Fakültesi öğretim üyesi Doç. Dr. Özlem Aydemir’in yürütücülüğünü yaptığı ‘’ In siliko yöntemle Mycobacterium tuberculosis'e karşı protein tirozin fosfataz A hedefli terapotik ajanların belirlenmesi ve in vitro etkinliklerinin araştırılması’’ başlıklı proje TÜBİTAK 1001 bilimsel ve teknolojik araştırma projelerini destekleme programı kapsamında destek almaya hak kazanmıştır.</p>
+                        </td>
+                    </tr>
+                    <tr class="notice-row">
+                        <td class="notice-img">
+                            <a href="basari3.html">
+                                <img src="img/basari1.jpg" alt="Başarı 3" class="notice-image">
+                            </a>
+                        </td>
+                        <td class="notice-content">
+                            <a href="basari3.html">
+                                <h3 class="notice-title">Prof. Dr. Ali Fuat Erdem'e "Fahri Profesör" Ünvanı</h3>
+                            </a>
+                            <p class="notice-description">Sakarya Üniversitesi Tıp Fakültesi Anesteziyoloji ve Reanimasyon Anabilim Dalı Öğretim Üyesi, Türk Anesteziyoloji ve Reanimasyon Derneği Başkanı Prof. Dr. Ali Fuat ERDEM, Özbekistan Cumhuriyeti Sağlık Bakanlığı Cumhuriyet Acil Tıp Araştırma Merkezi tarafından Khiva’da düzenlenen XIV. Cumhuriyet Bilimsel Konferans öncesi “Professor Emeritus” (Fahri Profesör) ünvanı ile onurlandırıldı.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="column">
+            <h2>Hakkımızda</h2>
+            <p><strong>Sakarya Üniversitesi Tıp Fakültesi</strong> Sakarya Üniversitesi Rektörlüğüne bağlı olarak <strong>28.3.1983 tarihli ve 2809 sayılı</strong> kanunun <strong>ek 30 uncu maddesine göre 09 Temmuz 2007 tarihinde</strong>  kurulmuştur. Kuruluşunu takiben 2009 yılında Fakültemize Dekan ataması yapılmış ve 2008-2009 Eğitim-Öğretim yılında da öğrenci alımına başlanmıştır. 2012 yılına kadar fakültemizi kazanan öğrenciler eğitimlerini Kocaeli Üniversitesi Tıp Fakültesi bünyesinde almış olup 2012 yılında Sakarya Üniversitesi Tıp Fakültesi Morfoloji Binasının tamamlanmasının ardından  öğrencilerimiz eğitimlerine fakültemiz bünyesinde devam etmişlerdir. İlerleyen yıllar içerisinde Üniversitemiz ve Sağlık Bakanlığı arasında imzalanan bir protokol ile Sağlık Bakanlığı Sakarya Üniversitesi Eğitim ve Araştırma Hastanesi, üniversitemizin eğitim, araştırma ve sağlık hizmetlerini verdiği kurumu olmuştur. Öğrenciler ilk üç yıl tıbbi eğitimlerini morfoloji binasında sürdürmekte, dört, beş ve altıncı sınıflarda hastane bünyesinde stajlarda geçirmektedirler.</p>
+        </div>
+    </section>
+
+    <!-- Alt Başlık -->
+    <footer class="footer">
+        <p>&copy; 2024 Sakarya Üniversitesi Tıp Fakültesi Pediatri Bölümü. Tüm hakları saklıdır.</p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/anasayfa.js"></script>  
+</body>
+</html>

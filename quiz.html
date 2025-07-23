@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pediatri Bölümü - Quiz</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+      .quiz-question {
+        margin-bottom: 20px;
+      }
+
+      .quiz-question p {
+        font-size: 1.2em;
+        color: #333;
+      }
+
+      .quiz-options {
+        list-style: none;
+        padding: 0;
+      }
+
+      .quiz-options li {
+        margin-bottom: 10px;
+      }
+
+      .quiz-options label {
+        font-size: 1em;
+        color: #333;
+        cursor: pointer;
+      }
+
+      .quiz-options input[type="radio"] {
+        margin-right: 10px;
+      }
+
+      .submit-btn {
+        background: #0058a0;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+      }
+
+      .submit-btn:hover {
+        background: #003a6a;
+      }
+
+      .result {
+        margin-top: 20px;
+        padding: 10px;
+        background: #e0ffe0;
+        color: #005800;
+        font-size: 1.2em;
+        border: 2px solid #005800;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Üst Başlık -->
+    <header class="top-header">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Logo" class="logo">
+            <div class="logo-text">
+                <h1>Sakarya Üniversitesi</h1>
+                <h2>Tıp Fakültesi</h2>
+            </div>
+        </div>
+        <div class="separator"></div> 
+        <div class="main">
+          <h1 class="main-title">Pediatri Bölümü</h1>
+          <p class="contact-info">Telefon: 0 (264) 295 66 30 | Email: tip@sakarya.edu.tr</p>
+          <button class="hamburger-menu" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+    </header>
+
+    <!-- Navigasyon -->
+    <nav class="navbar">
+      <ul class="nav-links">
+          <li><a href="anasayfa.html"><i class="fas fa-home"></i></a></li>
+          <li><a href="tanitim.html">Tanıtım</a></li>
+          <li><a href="asistanlar.html">Asistanlar</a></li>
+          <li><a href="ogretim-uyeleri.html">Öğretim Üyeleri</a></li>
+          <li><a href="takvim.html">Nöbet Takvimi</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="duyurular.html">Duyurular</a></li>
+          <li><a href="acildurum.html">Acil Durum</a></li>
+      </ul>
+  </nav>
+
+    <!-- Quiz Alanı -->
+    <section class="about-section">
+      <h2>Quiz: Pandemi Durumunda Bilgi Seviyesi</h2>
+      <form id="quizForm">
+        <!-- Soru 1 -->
+        <div class="quiz-question">
+          <p>1. COVID-19 belirtilerinden hangisi en yaygın olarak görülür?</p>
+          <ul class="quiz-options">
+            <li><label><input type="radio" name="q1" value="1"> Ateş ve öksürük</label></li>
+            <li><label><input type="radio" name="q1" value="0"> Göz kaşıntısı</label></li>
+            <li><label><input type="radio" name="q1" value="0"> Eklem ağrısı</label></li>
+          </ul>
+        </div>
+
+        <!-- Soru 2 -->
+        <div class="quiz-question">
+          <p>2. Eller ne kadar süreyle yıkanmalıdır?</p>
+          <ul class="quiz-options">
+            <li><label><input type="radio" name="q2" value="1"> 20 saniye</label></li>
+            <li><label><input type="radio" name="q2" value="0"> 5 saniye</label></li>
+            <li><label><input type="radio" name="q2" value="0"> 1 dakika</label></li>
+          </ul>
+        </div>
+
+        <!-- Diğer Sorular -->
+        <!-- Soru 3 -->
+        <div class="quiz-question">
+          <p>3. COVID-19'un yayılmasını önlemek için en etkili yöntem nedir?</p>
+          <ul class="quiz-options">
+            <li><label><input type="radio" name="q3" value="1"> Maske takmak</label></li>
+            <li><label><input type="radio" name="q3" value="0"> Spor yapmak</label></li>
+            <li><label><input type="radio" name="q3" value="0"> Sigara içmek</label></li>
+          </ul>
+        </div>
+        <!-- Soru 4 -->
+        <div class="quiz-question">
+          <p>4. Aşı, COVID-19'a karşı neden önemlidir?</p>
+          <ul class="quiz-options">
+            <li><label><input type="radio" name="q4" value="1"> Bağışıklık kazandırır</label></li>
+            <li><label><input type="radio" name="q4" value="0"> Enerji verir</label></li>
+            <li><label><input type="radio" name="q4" value="0"> Virüsü tedavi eder</label></li>
+          </ul>
+        </div>
+        <!-- Soru 5 -->
+        <div class="quiz-question">
+          <p>5. COVID-19'un yayılma hızı hangi duruma bağlıdır?</p>
+          <ul class="quiz-options">
+            <li><label><input type="radio" name="q5" value="1"> Sosyal mesafe</label></li>
+            <li><label><input type="radio" name="q5" value="0"> Renkli kıyafetler</label></li>
+            <li><label><input type="radio" name="q5" value="0"> Yüksek binalar</label></li>
+          </ul>
+        </div>
+
+
+        <button type="button" class="submit-btn" onclick="submitQuiz()">Quiz'i Bitir</button>
+      </form>
+      <div id="result" class="result" style="display:none;"></div>
+    </section>
+
+    <!-- Alt Başlık -->
+    <footer class="footer">
+      <p>&copy; 2024 Sakarya Üniversitesi Tıp Fakültesi Pediatri Bölümü. Tüm hakları saklıdır.</p>
+    </footer>
+    <script src="js/script.js"></script>  
+    <script>
+      function submitQuiz() {
+        const quizForm = document.getElementById("quizForm");
+        const formData = new FormData(quizForm);
+        let score = 0;
+
+        formData.forEach((value) => {
+          score += parseInt(value, 5); // Yanıt değerlerini toplar
+        });
+
+        const resultDiv = document.getElementById("result");
+        resultDiv.style.display = "block";
+
+        if (score === 5) {
+          resultDiv.textContent = "Tebrikler! Tüm soruları doğru yanıtladınız.";
+        } else {
+          resultDiv.textContent = `Quiz sonucu: ${score}/5 doğru yanıt. Daha fazla çalışma gerekebilir.`;
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pediatri Bölümü</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+.content {
+  padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.content h2,strong{
+    color:#0058a0;
+}
+
+.main-news {
+    width: 100%;
+}
+
+.side-news {
+    width: 100%;
+    background: #f4f4f4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.side-news h3 {
+
+    padding:10px;
+    color:#0058a0;
+
+}
+
+
+.side-news ul {
+    margin-top:0px;
+    list-style: none;
+    padding:10px;
+}
+
+.side-news ul li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.side-news img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px; 
+}
+.side-news a {
+    color: #003a6a;
+    text-decoration: none;
+    display: flex; 
+    align-items: center; 
+}
+
+.side-news a:hover {
+    text-decoration: none;
+    color: #ff6c00;
+}
+
+.news-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+
+    </style>
+  </head>
+  <body>
+    <!-- Üst Başlık -->
+    <header class="top-header">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Logo" class="logo">
+            <div class="logo-text">
+                <h1>Sakarya Üniversitesi</h1>
+                <h2>Tıp Fakültesi</h2>
+            </div>
+        </div>
+        <div class="separator"></div> 
+        <div class="main">
+          <h1 class="main-title">Pediatri Bölümü</h1>
+          <p class="contact-info">Telefon: 0 (264) 295 66 30 | Email: tip@sakarya.edu.tr</p>
+          <button class="hamburger-menu" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+    </header>
+
+    <!-- Navigasyon -->
+    <nav class="navbar">
+      <ul class="nav-links">
+          <li><a href="anasayfa.html"><i class="fas fa-home"></i></a></li>
+          <li><a href="tanitim.html">Tanıtım</a></li>
+          <li><a href="asistanlar.html">Asistanlar</a></li>
+          <li><a href="ogretim-uyeleri.html">Öğretim Üyeleri</a></li>
+          <li><a href="takvim.html">Nöbet Takvimi</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="duyurular.html">Duyurular</a></li>
+          <li><a href="acildurum.html">Acil Durum</a></li>
+      </ul>
+    </nav>
+
+    <!-- İçerik Bölümü -->
+    <section class="content">
+      <!-- Ana Haber -->
+      <div class="main-news">
+        <h2>Avrupa Birliği’nin En Yüksek Bütçeli Projesi SAÜ’den!
+        </h2>
+        <p><strong>Tarih:</strong> 5 Kasım 2024</p>
+        <img src="img/haber2.jpg" alt="Haber 2" style="width:100%; height:auto; border-radius:10px;">
+        <strong>SAÜ, İnşaat Sektöründe de Sürdürülebilirliği Misyon Edindi</strong>
+        <p>
+          Sakarya Üniversitesi, Mühendislik Fakültesi İnşaat Mühendisliği Öğr. Gör. Dr. Tuba Tatar’ın yürütücülüğünü yaptığı Afrika ile Sürdürülebilir Kalkınma Projesi (PURSUE), Avrupa Birliği’nin Üniversitemize verdiği en yüksek bütçeyle desteklenmeye hak kazandı.
+        </p>
+        <p>
+          Sakarya Üniversitesi Mühendislik Fakültesi İnşaat Mühendisliği Öğr. Gör. Dr. Tuba Tatar’ın yürütücülüğünde desteklenen proje ile yapı malzemelerinin kullanımında doğal kaynakların tüketimi en aza indirilerek sürdürülebilir yapı malzemelerinin kullanımı için eğitimler, seminerler ve workshopların düzenlenmesi hedefleniyor.
+        </p>
+        <p>
+          Proje kapsamında inşaat mühendisleri, mimarlar ve mezun olanlar arasında sürdürülebilir malzemeleri kullanabilecek uygulayıcılar yetiştirilecek. Uygulayıcıların bilgi birikimine ek laboratuvarları da geliştirilecek. Proje, Sakarya Üniversitesi (Türkiye), Porto Üniversitesi (Portekiz), Eduardo Mondlane Üniversitesi (Mozambik), Lurio Üniversitesi (Mozambik), Dar Es Salam Teknoloji Üniversitesi (Tanzanya), Ardhi Üniversitesi (Tanzanya), Simad Üniversitesi (Somali), Mogadişu Üniversitesi (Somali) ve Mozambik Mühendislik Laboratuvarı Kamu Enstitüsü (Mozambik)’nün ortaklığında gerçekleştirilecek.
+        </p>
+        <strong>
+          “Tüketimin sürdürülebilir tarafa evrilmesi gerekiyor”
+        </strong>
+        <p>
+          Proje araştırmacılarından Prof. Dr. Mehmet Emiroğlu proje hakkında, “Binalarımızda ve yollarımızda kullandığımız yapı malzemeleri doğal kaynaklarımızı tüketiyor. Bu hususta geçmişten günümüze artan bir ivme var. Söz konusu tüketimin daha sürdürülebilir tarafa evrilmesi gerekiyor. Örneğin çimento üretimi, dünyadaki karbon salımının %10’undan sorumlu. Dolayısıyla sadece çimento kullanımının her bir kilogramını azaltmak bile gelecek nesiller için fayda sağlayacak. Projeyle, inşaat sektörüyle ilgili sürdürülebilir malzemelerin üretimini yaygınlaştırmayı, Afrika bölgesinde eğitimler, seminerler ve workshoplar düzenlemeyi amaçlıyoruz.” ifadelerini kullandı.
+        </p>
+        <strong>
+          “Afrika’nın sürdürülebilir yapı malzemelerine ihtiyacı var”
+        </strong>
+        <p>
+          Projenin pilot bölgesinin Afrika olarak seçilmesinin nedenlerini anlatan Prof. Dr. Samir Afifi, “Öncelikle Afrika’nın sürdürülebilir yapı malzemelerine ihtiyacı var. Doğal kaynak kullanımı için makul bir yer. Yerel kaynakların yapım tekniklerini öğreterek nesiller boyu kullanımını sağlayacağız. Diğer yandan Sahra Altı Bölgesi’ne çok ciddi bütçe aktarılıyor. Sadece son çağrının bütçesi 27 milyon euro. Bir akademisyenin burada iş insanı gibi düşünüp hepimizin ödemelerinden projelere aktarılan bütçeyi kullanarak proje yazması ve destek alması hepimiz için değerli. AB’nin yanı sıra Türk dış politikasının Afrika’ya verdiği önem doğrultusunda da kamu diplomasisi olarak aksiyon almak hedeflerimizden.” dedi.
+        </p>
+        <strong>
+          “Sakarya kamuoyu için de oldukça önemli bir başarı”
+        </strong>
+        <p>
+          SAÜ’nün, akademik olarak lider üniversitelerle başa baş bir yarış içerisinde olduğunu belirten Dr. Tuba Tatar, “Türkiye’de bu çağrıda desteklenen üç büyük projeden bir tanesi bizim projemiz. Sakarya kamuoyu için de oldukça önemli bir başarı. Uluslararası arenada Ülkemizi, Şehrimizi ve Üniversitemizi temsil ederek bilinirliliğe katkı sağlıyoruz.” ifadelerinde bulundu. Diğer yandan projenin sınırını insanın adım attığı her yer olarak belirten Dr. Tatar, “Osmanlı Afrikası kavramı bizim için tozlanmış olsa da orada Türkiye’ye bakış çok değerli. Afrika’nın hamisinin Türkiye olmasını gönülden istiyorum. Hem insani hem akademik bir amaç güdüyorum. Proje çerçevesinde yayınlar ve kitaplar çıkaracağız. Tüm bunlar sürdürülebilir insani yaşam için oldukça önemli.” dedi.
+        </p>
+        <strong>
+          “Doktorasını yeni bitirmiş bir akademisyenim”
+        </strong>
+        <p>
+          Dr. Tatar, “Biz yüksek bütçeli uluslararası proje alabiliyoruz ve yönetebiliyoruz. Bu da cesaret verici olmalı.  SAÜ tarihinde ilk defa merkezi projede başarılı oldu. Özellikle genç akademisyenlere tavsiyem; projenizin derdine güveniyorsanız, ekibinizi güzel kurguladıysanız, dil probleminiz yoksa ve proje yazma matematiğine hakimseniz çekinmeyin. Kaldı ki Üniversitemizde destek alabileceğiniz birimler var. Ben doktora unvanına sahip genç bir akademisyenim. Bugün Avrupa Birliği tarafından desteklenen bir projenin yürütücülüğünü yapıyorum. Türkiye adına yapılan olumsuz yorumlar da yanlış, bu algıyı da kırmamız gerektiğine inanıyorum.” diyerek meslektaşlarına seslendi.
+        </p>
+        <p>
+          Üç sene sürecek başlangıç toplantısı, kasım civarında Tanzanya’da Dar Es Salam Teknoloji Üniversitesinde gerçekleşecek. Buradan başlanmasının sebebi ise sahayı öğrenmek ve durum tespiti yapmak.
+        </p>
+        <p>
+          Birleşmiş Milletler için yaşam önceliği olarak belirlenen barınma ihtiyacını karşılayan proje, korunaklı ve bakir bir alan olan Sahra Altı Bölgesi’nde uzun ömürlü yapı malzemeleriyle sıfırdan sürdürülebilir bir yaşam alanı inşa edilmesinde öncü olacak. Ayrıca proje, BM Sürdürülebilir Kalkınma Amaçları’ndan; Sanayi yenilikçilik ve Altyapı, Sürdürülebilir Şehir ve Yaşam Alanları, Sorumlu Tüketim ve Üretim, İklim Eylemi ve Hedefler için Ortaklıklar hedeflerini de kapsıyor.
+        </p>
+        <strong>
+          PURSUE Projesi
+        </strong>
+        <p>
+          Dayanıklı, tehlikelere dayanıklı, sürdürülebilir ve erişilebilir konut sağlanmasının, eşitliği, sağlığı, eğitimi ve sosyal hizmetleri teşvik etmek için hayati önem taşıdığı bilincinden hareketle geliştirilen PURSUE projesi, Sahra Altı Afrika’daki (SAR) yüksek öğrenim kurumları, profesyoneller ve topluluklar arasında iş birliğini teşvik ederek yerel olarak temin edilebilen, çevre dostu ve uygun fiyatlı inşaat malzemelerinin kullanımını teşvik etmeyi amaçlıyor. Proje, endüstri inovasyonu, sürdürülebilir şehirler, sorumlu tüketim, iklim eylemi ve kalkınma için ortaklıklar gibi sürdürülebilir kalkınma hedeflerini desteklemeye odaklanarak Türkiye, Portekiz, Mozambik, Tanzanya ve Somali’deki üniversiteler arasındaki iş birliğini içeriyor.
+        </p>
+        <p>
+          Proje ayrıca, hedeflenen üniversitelerin kapasitesini artırmayı ve yenilikçi öğretim kursları geliştirme, son teknoloji eğitim programları ve modern laboratuvar iyileştirmeleri yoluyla bölgedeki diğer Yükseköğretim Kurumlarının ve profesyonel kuruluşların ötesine geçmeyi amaçlıyor. Hedef gruplar arasında öğrenciler, akademisyenler, teknisyenler ve inşaat mühendisliği ve mimarlar uygulayıcıları yer alıyor. Paydaşlar arasında araştırma merkezleri, kamu kuruluşları, STK’lar, elçilikler ve özel sektör yer alıyor. Proje, Proje İlk Faaliyetleri, Kurs Geliştirme, Laboratuvar Kapasitesi Zenginleştirme, Eğitmen ve uygulayıcıların eğitimi, Kalite Güvencesi ve Değerlendirmesi, Proje Sonuçlarının Yaygınlaştırılması ve Kullanılması ve Proje Yönetimi ve Koordinasyonu başlıklarından oluşuyor.
+        </p>
+
+      </div>
+
+      <!-- Diğer Haberler -->
+      <div class="side-news">
+        <h3>Diğer Haberler</h3>
+        <ul>
+          <li>
+            <a href="haber1.html">
+              <img src="img/haber1.jpg" alt="Haber1">
+              Sakarya Üniversitesi zirveye yerleşti!
+            </a>
+          </li>
+          <li>
+            <a href="haber3.html">
+              <img src="img/haber3.jpg" alt="Haber 3">
+              Sağlık Neferlerimiz Beyaz Önlüklerini Giydiler
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Alt Başlık -->
+    <footer class="footer">
+        <p>&copy; 2024 Sakarya Üniversitesi Tıp Fakültesi Pediatri Bölümü. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

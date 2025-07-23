@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pediatri Bölümü - Takvim</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+
+</style>
+<body>
+    <!-- Üst Başlık -->
+    <header class="top-header">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Logo" class="logo">
+            <div class="logo-text">
+                <h1>Sakarya Üniversitesi</h1>
+                <h2>Tıp Fakültesi</h2>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="main">
+          <h1 class="main-title">Pediatri Bölümü</h1>
+          <p class="contact-info">Telefon: 0 (264) 295 66 30 | Email: tip@sakarya.edu.tr</p>
+          <button class="hamburger-menu" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+    </header>
+
+    <!-- Navigasyon -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="anasayfa.html"><i class="fas fa-home"></i></a></li>
+            <li><a href="tanitim.html">Tanıtım</a></li>
+            <li><a href="asistanlar.html">Asistanlar</a></li>
+            <li><a href="ogretim-uyeleri.html">Öğretim Üyeleri</a></li>
+            <li><a href="takvim.html">Nöbet Takvimi</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="duyurular.html">Duyurular</a></li>
+            <li><a href="acildurum.html">Acil Durum</a></li>
+        </ul>
+    </nav>
+
+    <!-- Takvim Bölümü -->
+    <section class="calendar-section">
+        <h2>Nöbet Takvimi Oluştur</h2>
+        <div class="calendar-form">
+            <label for="date">Tarih:</label>
+            <input type="date" id="date" required>
+
+            <label for="section">Bölüm:</label>
+            <select id="section">
+                <option value="Cocuk Acil">Çocuk Acil</option>
+                <option value="Cocuk Yogun Bakim">Çocuk Yoğun Bakım</option>
+                <option value="Cocuk Hematoloji ve Onkoloji">Çocuk Hematoloji ve Onkoloji</option>
+            </select>
+
+            <label for="assistant">Asistan:</label>
+            <select id="assistant">
+                <!-- Asistan bilgileri JavaScript ile yüklenecek -->
+            </select>
+
+            <button id="addTaskBtn">Nöbet Oluştur</button>
+        </div>
+
+        <div id="calendar" class="calendar">
+            <!-- Görsel takvim burada oluşturulacak -->
+        </div>
+        
+
+        <div class="calendar-output">
+            <h2>Oluşturulan Nöbet Takvimi</h2>
+            <table id="calendarTable">
+                <thead>
+                    <tr>
+                        <th>Tarih</th>
+                        <th>Bölüm</th>
+                        <th>Asistan</th>
+                        <th>Eylem</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dinamik takvim burada görünecek -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Alt Başlık -->
+    <footer class="footer">
+        <p>&copy; 2024 Sakarya Üniversitesi Tıp Fakültesi Pediatri Bölümü. Tüm hakları saklıdır.</p>
+    </footer>
+    <script src="js/takvim.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
