@@ -1,10 +1,3 @@
-   ____           _ _       _             
-  |  _ \ ___  ___(_) |_ ___| |__   ___    
-  | |_) / _ \/ __| | __/ __| '_ \ / _ \   
-  |  __/ (_) \__ \ | || (__| | | |  __/   
-  |_|   \___/|___/_|\__\___|_| |_|\___|   
-
-
 # Sakarya University Pediatrics Website
 
 A **responsive Pediatrics Department web project** developed as a course project.  
